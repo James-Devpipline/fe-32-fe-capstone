@@ -4,6 +4,7 @@ import ScaleLoader from "react-spinners/ScaleLoader";
 
 import getOneShow from "../helpers/getOneShow";
 import ParseDescription from "../helpers/ParseDescription";
+import AddReview from "../util/AddReview";
 
 export default function ShowPage() {
   const [show, setShow] = useState([])
@@ -81,28 +82,8 @@ export default function ShowPage() {
         <div className="break-wrapper">
           <hr></hr>
         </div>
-        
-        <div className="show-reviews">
 
-          <div className="review-header">
-            <h3>Reviews</h3>
-          </div>
-
-          <div className="actual-reviews">
-            <div className="review-user">
-              <p>User</p>
-            </div>
-
-            <div className="users-review">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, ipsam dicta modi obcaecati odit non in sequi. Iure nostrum maxime, ipsa, culpa quibusdam earum assumenda sed aliquam enim deleniti asperiores?
-    Optio sit libero nam praesentium dolore veritatis fuga labore odio recusandae id excepturi culpa animi at nisi nemo cupiditate in reprehenderit inventore, adipisci eaque unde ullam? Tempora hic voluptatem pariatur!</p>
-            </div>
-
-            <div className="users-rating">
-              <p>Rating: 3/5</p>
-            </div>
-          </div>
-        </div>
+        <AddReview />
       </>
 
       : 
